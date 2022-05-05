@@ -1,0 +1,276 @@
+*{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: auto;
+}
+.menu a{
+    color:#03183f;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+   }
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.logotipo{
+    width: 200px;
+
+}
+
+nav ul li{
+    display: inline;
+    padding:  20px;
+    margin-bottom: 160px;
+    text-align: center;
+    
+}
+
+.cuenta a{
+    text-align: left;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+
+.cuenta a:hover{
+-webkit-box-shadow: -3px 6px 29px -10px rgba(8,0,0,0.71);
+-moz-box-shadow: -3px 6px 29px -10px rgba(0,0,0,0.71);
+box-shadow: -3px 6px 29px -10px rgba (0,0,0,0.71);
+transition: 1s;
+background-color:#494949;
+}
+
+.imagen { 
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+
+}
+
+section .dos{
+    background-color: red;
+    padding: 60px;
+}
+
+.variaciones{ 
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+h5{  font-size: large;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.variaciones a{
+    color: rgb(44, 44, 44);
+}
+
+.variaciones a:hover{
+    text-decoration: none;
+    color:red;
+}
+
+.logos{ 
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+
+.marca{
+    margin: auto;
+    padding-left: 50px;
+}
+
+.marca h1{
+    color: red;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.marca p{
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+.uno{
+    display: flex;
+
+}
+
+
+.dos h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+.dos p{
+    color: aliceblue;
+}
+
+.parrafo{
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+.flex{
+    justify-content: space-around;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;  
+}
+
+.container{
+    
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    
+
+}
+
+footer{ 
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    gap: 12px;
+   
+}
+.pie .item{
+    padding: 1px;
+}
+.pie a{
+    border: 20px 0px;
+}
+
+.registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px 70px 80px;
+}
+
+.otros{ 
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    display: flex;
+    padding: 15px;
+}
+
+.otros h4{
+    color: red;
+}
+.otros a{
+    color: rgb(0, 0, 0);
+}
+
+.otros a:hover{
+    text-decoration: underline;
+}
+.slogan{
+    color: #494949;
+    align-items: center;
+    
+}
+
+.redes{
+    color: red;
+    padding-top: 10px;
+}
+
+.redes ul li{
+    display: inline;
+    justify-content: center;
+}
+
+.redes ul li a{
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.redes ul li a:hover{
+    color: #494949;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+    .container{
+        display: flexbox;
+        flex-wrap: wrap;
+        
+    }
+
+    .otros{display: flexbox;
+    flex-wrap:wrap;
+
+}
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container{
+        display: flexbox;
+        flex-wrap: wrap;}
+
+    .otros{display: flexbox;
+            flex-wrap:wrap;
+    }   
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-basis: 0%;
+        flex-direction: column;
+        padding-bottom: 20px;
+       
+    }
+
+    .otros{display: flexbox;
+        flex-wrap:wrap;}
+
+    .nav ul li a{
+        font-size: 10px;
+        padding: 5px ;
+        flex-grow: unset;
+        border: 3px solid black;
+    }
+}
